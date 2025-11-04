@@ -1,14 +1,6 @@
 /**
  * @file info.c
- * @brief prints:
- *        The current time of day - in nanoseconds
- *        The system’s network name
- *        The operating system name
- *        The operating system release and version
- *        The system’s hardware type
- *        The number of CPUs on the system
- *        The total amount of physical memory in bytes
- *        The total amount of free memory in bytes
+ * @brief Displays system information including time, hostname, OS details, CPU count, and memory statistics
  * 
  * Course: CPE 2600
  * Section: 111

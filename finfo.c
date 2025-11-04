@@ -1,6 +1,6 @@
 /**
  * @file finfo.c
- * @brief displays the file information about a given file provided via the command line
+ * @brief Displays detailed file information including type, permissions, owner, size, and modification time
  * 
  * Course: CPE 2600
  * Section: 111

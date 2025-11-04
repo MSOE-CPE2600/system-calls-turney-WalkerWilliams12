@@ -1,6 +1,6 @@
 /**
  * @file pmod.c
- * @brief Modifies its own priority to reduce it by 10, sleeps for 1,837,272,638 nano seconds, and prints a goodbye message and exits
+ * @brief Modifies its own priority and sleeps for a specified duration
  * 
  * Course: CPE 2600
  * Section: 111
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
         printf("New priority: %d\n", new_priority);
     }
     
-    // Sleep for 1,837,272,638 nanoseconds
+    // Sleeps for 1,837,272,638 nanoseconds
     struct timespec sleep;
     sleep.tv_sec = 1;  // 1 second
     sleep.tv_nsec = 837272638;  // 83727268 nanoseconds

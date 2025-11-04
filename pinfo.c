@@ -1,10 +1,6 @@
 /**
  * @file pinfo.c
- * @brief Take a single command line &parameter that is a process identifier
- *        For that process identifier, print out - The process priority
- *        The scheduling method - as a string of text NOT a number - If the process identifier
- *        does not exist, print an error message and exit - If the user does NOT specify a process
- *        identifier, print the information for the CURRENT executing process
+ * @brief Shows process information including priority and scheduling method for a given PID
  * 
  * Course: CPE 2600
  * Section: 111
@@ -70,7 +66,7 @@ int main(int argc, char* argv[])
         printf("Process priority: %d\n", priority);
     }
 
-    // Get scheduling policy
+    // Gets scheduling policy
     int schedule_policy = sched_getscheduler(pid);
     if (schedule_policy == -1) 
     {
@@ -78,7 +74,7 @@ int main(int argc, char* argv[])
     } 
     else 
     {
-        // Convert scheduling policy to human-readable string
+        // Converts scheduling policy to human-readable string
         const char* policy_name;
         if (schedule_policy == SCHED_OTHER)
         {
