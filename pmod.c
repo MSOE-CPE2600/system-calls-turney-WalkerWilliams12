@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
     int new_priority = nice(10);
     if (new_priority == -1) 
     {
-        printf("nice() did not work correctly.");
+        printf("nice() did not work correctly.\n");
     } 
     else 
     {
@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
     printf("Sleeping for 1,837,272,638 nanoseconds...\n");
     if (nanosleep(&sleep, NULL) == -1) 
     {
-        printf("Sleep did not wait 1,837,272,638 nanoseconds");
+        printf("Sleep did not wait 1,837,272,638 nanoseconds\n");
     }
     
     // Goodbye message
